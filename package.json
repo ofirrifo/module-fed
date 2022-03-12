@@ -1,16 +1,23 @@
 {
   "name": "@rifo/module-fed",
+  "workspaces": [
+    "shell"
+  ],
   "version": "1.0.0",
   "description": "Angular Module Federation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "shell:start": "npm run start --workspace=shell",
+    "remote-a:start": "npm run start --workspace=remote-a"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ofirrifo/module-fed.git"
   },
-  "keywords": ["Angular Module Federation", "Module Federation"],
+  "keywords": [
+    "Angular Module Federation",
+    "Module Federation"
+  ],
   "author": "Ofir Fridman",
   "license": "MIT",
   "bugs": {
