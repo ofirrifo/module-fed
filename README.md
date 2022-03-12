@@ -11,19 +11,15 @@ git clone https://github.com/ofirrifo/module-fed.git
 ```
 
 ## Install Dependencies
-- shell - from the shell root project run this command:
+- From the root of the project run this command:
 ```sh
 npm i
 ```
-
-- remote-a - from the remote-a root project run this command
-```sh
-npm i
-```
+This will install all projects dependencies
 
 ## Execute Projects
-- from the root of the project run this command:
+- From the root of the project run this command:
 ```sh
 npm run all:start
 ```
-this will serve both shell and remote-a projects
+This will serve both shell and remote-a projects
