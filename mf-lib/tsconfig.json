@@ -9,6 +9,12 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "mf-communication-lib": [
+        "dist/mf-communication-lib/mf-communication-lib",
+        "dist/mf-communication-lib"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
