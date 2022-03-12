@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MfCommunicationLibService, MessageType, Message} from '@rifo/mf-communication-lib';
+import {MfCommunicationLibService, MessageType, RootMfCommunicationLibService, RootMessageType} from '@rifo/mf-communication-lib';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +10,15 @@ export class AppComponent {
   title = 'remote-a';
 
   
-  constructor(private mfCommunicationLibService: MfCommunicationLibService){
+  constructor(private mfCommunicationLibService: MfCommunicationLibService, private rootMfCommunicationLibService: RootMfCommunicationLibService){
 
   }
 
-  sendMessage(){
-    debugger
-    this.mfCommunicationLibService.emit({type: MessageType.notification, data: 'remote-a'});
+  sendMessageViaPlatform(): void{
+    this.mfCommunicationLibService.emit({type: MessageType.notification, data: 'message from remote-a'});
+  }
+
+  sendMessageViaRoot(): void{
+    this.rootMfCommunicationLibService.emit({type: RootMessageType.notification, data: 'message from remote-a'});
   }
 }

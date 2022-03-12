@@ -11,7 +11,8 @@
   "scripts": {
     "shell:start": "npm run start --workspace=shell",
     "remote-a:start": "npm run start --workspace=remote-a",
-    "all:start": "concurrently --kill-others \"npm run shell:start\" \"npm run remote-a:start\""
+    "all:start": "concurrently --kill-others \"npm run shell:start\" \"npm run remote-a:start\"",
+    "lib:build": "npm run lib:build --workspace=mf-lib"
   },
   "repository": {
     "type": "git",
