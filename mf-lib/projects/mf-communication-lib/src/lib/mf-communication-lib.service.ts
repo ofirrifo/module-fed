@@ -12,7 +12,7 @@ export interface Message<T = any> {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'platform'
 })
 export class MfCommunicationLibService {
   private readonly _mssage = new Subject<any>();

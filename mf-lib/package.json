@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "lib:build": "ng build mf-communication-lib",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
