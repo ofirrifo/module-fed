@@ -1,0 +1,20 @@
+{
+  "name": "@rifo/module-fed",
+  "version": "1.0.0",
+  "description": "Angular Module Federation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofirrifo/module-fed.git"
+  },
+  "keywords": ["Angular Module Federation", "Module Federation"],
+  "author": "Ofir Fridman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ofirrifo/module-fed/issues"
+  },
+  "homepage": "https://github.com/ofirrifo/module-fed#readme"
+}
