@@ -3,4 +3,5 @@
  */
 
 export * from './lib/mf-communication-lib.service';
+export * from './lib/mf-communication-lib-root.service';
 
