@@ -1,8 +1,23 @@
 :host{
-    .title{
-        font-size: 48px;
-        color: green;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    .remote{
+        border: 3px dashed green;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin: 12px;
+        width: 50vw;
+        height: 300px;
+
+        .title{
+            font-size: 48px;
+            color: green;
+            margin-bottom: 12px;
+        }
     }
+    
 }
