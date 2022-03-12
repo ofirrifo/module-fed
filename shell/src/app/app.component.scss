@@ -5,4 +5,17 @@
         display: flex;
         justify-content: center;
     }
+
+    .message{
+        position: absolute;
+        left: 35%;
+        background-color: #2f96b4;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+    }
 }

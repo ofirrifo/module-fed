@@ -7,11 +7,14 @@ import {MfCommunicationLibService, MessageType, Message} from '@rifo/mf-communic
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'shell';
+  message = '';
 
   constructor(private mfCommunicationLibService: MfCommunicationLibService){
     this.mfCommunicationLibService.on(MessageType.notification).subscribe((message: Message) => {
-      alert(message.data);
+      this.message = message.data;
+      setTimeout(() => {
+        this.message = '';
+      }, 1000);
     })
   }
 }
