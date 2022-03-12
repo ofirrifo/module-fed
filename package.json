@@ -1,14 +1,16 @@
 {
   "name": "@rifo/module-fed",
   "workspaces": [
-    "shell"
+    "shell",
+    "remote-a"
   ],
   "version": "1.0.0",
   "description": "Angular Module Federation",
   "main": "index.js",
   "scripts": {
     "shell:start": "npm run start --workspace=shell",
-    "remote-a:start": "npm run start --workspace=remote-a"
+    "remote-a:start": "npm run start --workspace=remote-a",
+    "all:start": "concurrently --kill-others \"npm run shell:start\" \"npm run remote-a:start\""
   },
   "repository": {
     "type": "git",
@@ -23,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/ofirrifo/module-fed/issues"
   },
-  "homepage": "https://github.com/ofirrifo/module-fed#readme"
+  "homepage": "https://github.com/ofirrifo/module-fed#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
 }
