@@ -4,6 +4,10 @@ This project build from 3 angular projects
 - remote-a the remote peoject which will host in the shell project
 - mf-lib angular lib which will use for communication between the above projects. shell <==> remote-a
 
+Prerequisites
+`Node.js >=16.14.0 <17`
+`NPM >=7.10.0 < 8`
+
 
 ## Clone Repo
 ```sh
